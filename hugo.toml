@@ -1,4 +1,16 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My Blog'
+title = 'Blog Site'
 theme = "hugo-book"
+
+# Book configuration
+disablePathToLower = true
+enableGitInfo = true
+
+# Needed for mermaid/katex shortcodes
+[markup]
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.tableOfContents]
+  startLevel = 1

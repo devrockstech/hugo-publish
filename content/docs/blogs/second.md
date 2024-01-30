@@ -1,5 +1,6 @@
 ---
-weight: 10
+title: Second Blog
+weight: 3
 ---
 
 # Setting up ArgoCD with OIDC login in development environment (insecure )

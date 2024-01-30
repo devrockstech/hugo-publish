@@ -1,5 +1,6 @@
 ---
-weight: 1
+title: Third Blog
+weight: 20
 ---
 # Setting up ArgoCD in k8s cluster with local User & RBAC
 

@@ -1,3 +1,7 @@
+---
+weight: 10
+---
+
 # Setting up ArgoCD with OIDC login in development environment (insecure )
 
 ![misc-argocd-oidc](https://github.com/naren4b/nks/assets/3488520/b01d2c3b-19d6-44fe-b8d8-b044d86e2000)

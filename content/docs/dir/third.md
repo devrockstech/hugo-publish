@@ -1,3 +1,6 @@
+---
+weight: 1
+---
 # Setting up ArgoCD in k8s cluster with local User & RBAC
 
 ![argocd-rbac](https://user-images.githubusercontent.com/3488520/204094103-33ed7434-efe4-489b-afc5-c4971ef37d90.jpg)

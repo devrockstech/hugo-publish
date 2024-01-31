@@ -1,7 +1,7 @@
 ---
 weight: 10
 bookFlatSection: true
-title: "Others"
+title: "Terraform"
 ---
 
 # This is other content home page

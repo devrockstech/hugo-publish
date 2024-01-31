@@ -1,5 +1,5 @@
 ---
-title: First Blog
+title: Setup Kind Cluster
 weight: 1
 ---
 # Local Kubernetes Cluster Setup

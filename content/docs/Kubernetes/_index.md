@@ -10,7 +10,7 @@ This page can be used to present upper level content for blogs.
 
 You can even build content of table like this
 
-- [Setup Kind Cluster](/docs/Kubernetes/kind-cluster)
+- [Setup Kind Cluster](/hugo-publish/docs/Kubernetes/kind-cluster)
 - [Setup Ouath on Kind CLuster](/docs/Kubernetes/Setup-Ouath)
 - [Setup Cluster on Edge](/docs/Kubernetes/Edge) \
          - [K3s-Docker](/docs/Kubernetes/Edge/docker-k3s) \

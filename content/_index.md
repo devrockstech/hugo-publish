@@ -12,5 +12,5 @@ Secure from the start" in the context of cloud computing refers to the practice 
 
 I will be focusing security on the below areas  
 
-- [Kubernetes](/docs/Kubernetes)
-- [Terraform](/docs/Terraform)
+- [Kubernetes](/hugo-publish/docs/kubernetes)
+- [Terraform](/hugo-publish/docs/terraform)

@@ -16,6 +16,8 @@ docker version
 Follow appropriate installation steps applicable to your environment. You can use podman as well if your system doesn't support docker as its licensed. 
 ![image](https://user-images.githubusercontent.com/76629897/204837565-7a1fd49e-d3a0-4f55-ae1a-333932179c2b.png)
 
+For installing podman please refer to the official [website](https://podman.io/docs/installation)
+
 ## Install Go Binary
 ```bash
 apt install golang-go

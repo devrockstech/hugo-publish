@@ -1,5 +1,5 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'Security First'
+title = 'Cloud Security Tips & Tricks'
 theme = "hugo-book"
 

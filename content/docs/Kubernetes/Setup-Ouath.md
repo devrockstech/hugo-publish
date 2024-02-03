@@ -4,7 +4,8 @@ weight: 3
 ---
 
 # Setup Github Oauth
-*Notes*  
+For setting Ouath we would need a domain name and SSL certificate and then we will configure the following 
+
 `https://<YOUR_DOMAIN_NAME>.com/dex/` -> Dex service for authenticating with Github  
 `https://<YOUR_DOMAIN_NAME>.com/dex-auth/` -> A service which generate keys for accessing cluster
 

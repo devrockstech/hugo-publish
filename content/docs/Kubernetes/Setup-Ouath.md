@@ -29,7 +29,7 @@ nodes:
         oidc-ca-file: /etc/ssl/certs/oidc-ca.pem
         oidc-client-id: dex-k8s-authenticator
         oidc-groups-claim: groups
-        oidc-issuer-url: https://<YOUR_DOMAIN_NAME>/dex
+        oidc-issuer-url: https://<YOUR_DOMAIN_NAME>.com/dex
         oidc-username-claim: email
   - |
     kind: InitConfiguration
@@ -55,7 +55,7 @@ nodes:
 3. Create `New OAuth App`, 
 * Application name: what-ever-you-like
 * Homepage URL: https://what-ever-you-like
-* Authorization callback URL: `https://<YOUR_DOMAIN_NAME>/dex/callback`
+* Authorization callback URL: `https://<YOUR_DOMAIN_NAME>.com/dex/callback`
   
 After create new Oauth App, you will see `Client ID` and `Generate a new client secret` -> click to generate a new client secret
 
@@ -164,7 +164,7 @@ ingress:
      hosts:
        - k8s-origin.devops-learning.com
 config:
-  issuer: https://<YOUR_DOMAIN_NAME>/dex
+  issuer: https://<YOUR_DOMAIN_NAME>.com/dex
   storage:
     type: sqlite3
     config:
@@ -192,7 +192,7 @@ config:
     config:
       clientID: GITHUB_CLIENT_ID
       clientSecret: GITHUB_CLIENT_SECRET
-      redirectURI: https://<YOUR_DOMAIN_NAME>/dex/callback
+      redirectURI: https://<YOUR_DOMAIN_NAME>.com/dex/callback
       orgs:
       - name: GITHUB_GROUP
       loadAllGroups: false
@@ -240,7 +240,7 @@ ingress:
   tls:
     - secretName: dex-tls
       hosts:
-        - k8s-origin.devops-learning.com
+        - <YOUR_DOMAIN_NAME>.com
 ```
 Install `dex` and `dex-auth`
 ```

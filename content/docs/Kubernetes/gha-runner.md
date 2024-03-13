@@ -3,6 +3,8 @@ title: Setup Self Hosted GHA Runner
 weight: 1
 ---
 
+# GitHub Action Runner Setup
+---
 GitHub Action runner are the agents to schedule our job in a  GitHub actions workflow.
 There are two types of Runners
 - GitHub-hosted: These are agent machines hosted by GitHub.
@@ -25,10 +27,10 @@ The most ideal method to self host a GitHub action runner is to deploy it in Kub
 
 Actions Runner Controller (ARC) makes it simpler to run self hosted environments on Kubernetes(K8s) cluster.
 
-![ARC](image.png)
+![ARC](/content/docs/![alt](https://image.png)
 
 With ARC you can :
-
+---
 - Deploy self hosted runners on Kubernetes cluster with a simple set of commands.
 - Auto scale runners based on demand.
 - Setup across GitHub editions including GitHub Enterprise editions and GitHub Enterprise Cloud
@@ -44,7 +46,7 @@ Installation of Self Hosted runner is a two fold process.
 
 
 ## Deploy Runner Controller
-
+---
 Use the following command to download the GitHub Actions Runner Controller Helm Chart in the current directory:
 
 ```bash
@@ -84,7 +86,7 @@ arc-gha-rs-controller-78c9b88766-8l9zc   1/1     Running   0          5m
 ---
 
 ## Deploy Self-Hosted Runner
-
+---
 Use the following command to download the GitHub Actions Runner Helm Chart in the current directory:
 
 ```bash

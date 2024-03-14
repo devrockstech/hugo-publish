@@ -17,7 +17,7 @@ jobs:
       run: |
         source_branch=${{ github.head_ref }}
         destination_branch=${{ github.base_ref }}
-        if [[ "$source_branch" =~ ^(dev-patch|prod-patch|preprod-patch|non-prod-patch)-.*$ ]]; then
+        if [[ "$source_branch" =~ ^(dev-patch|prod-patch|main-patch|non-prod-patch)-.*$ ]]; then
           source_prefix="${BASH_REMATCH[1]}"
           case "$source_prefix" in
             dev-patch)
@@ -26,8 +26,8 @@ jobs:
             prod-patch)
               expected_destination="prod"
               ;;
-            preprod-patch)
-              expected_destination="preprod"
+            main-patch)
+              expected_destination="main"
               ;;
             non-prod-patch)
               expected_destination="non-prod"

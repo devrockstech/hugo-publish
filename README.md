@@ -1,4 +1,4 @@
-# Hugo based static website from markdown 
+# Hugo based static website from markdown
 
 To setup follow below steps 
 1. Create Hugo site on local 

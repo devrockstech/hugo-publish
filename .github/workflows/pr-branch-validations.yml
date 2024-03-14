@@ -19,7 +19,25 @@ jobs:
         destination_branch=${{ github.base_ref }}
         if [[ "$source_branch" =~ ^(dev-patch|prod-patch|preprod-patch|non-prod-patch)-.*$ ]]; then
           source_prefix="${BASH_REMATCH[1]}"
-          if [[ "$destination_branch" =~ ^"$source_prefix" ]]; then
+          case "$source_prefix" in
+            dev-patch)
+              expected_destination="dev"
+              ;;
+            prod-patch)
+              expected_destination="prod"
+              ;;
+            preprod-patch)
+              expected_destination="preprod"
+              ;;
+            non-prod-patch)
+              expected_destination="non-prod"
+              ;;
+            *)
+              echo "Invalid prefix found in the source branch name."
+              exit 1
+              ;;
+          esac
+          if [[ "$destination_branch" == "$expected_destination" ]]; then
             echo "Branch validation passed."
           else
             echo "Destination branch does not match the prefix of the source branch."

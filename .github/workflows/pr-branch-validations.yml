@@ -33,7 +33,7 @@ jobs:
               expected_destination="non-prod"
               ;;
             *)
-              echo "Invalid prefix found in the source branch name."
+              echo "Invalid prefix found in the source branch name. Source branch name should start with dev-patch, prod-patch, main-patch or non-prod-patch"
               exit 1
               ;;
           esac

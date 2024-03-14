@@ -1,0 +1,30 @@
+name: PR Branch Validation
+
+on:
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  validate_pr:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Validate PR
+      run: |
+        source_branch=${{ github.head_ref }}
+        destination_branch=${{ github.base_ref }}
+        if [[ "$source_branch" =~ ^(dev-patch|prod-patch|preprod-patch|non-prod-patch)-.*$ ]]; then
+          if [[ "$destination_branch" =~ ^"${BASH_REMATCH[1]}" ]]; then
+            echo "Branch validation passed."
+          else
+            echo "Destination branch does not match the prefix of the source branch."
+            exit 1
+          fi
+        else
+          echo "Source branch name does not start with valid prefix."
+          exit 1
+        fi

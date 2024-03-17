@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Get the name of the current branch
+current_branch=$(git rev-parse --abbrev-ref HEAD)
+
+# Define the pattern to match
+pattern="^(dev|prod|non-prod|main)-patch-.*$"
+
+# Check if the branch name matches the pattern
+if ! [[ "$current_branch" =~ $pattern ]]; then
+    echo "Branch name '$current_branch' does not follow the required patterns are dev-patch-<unique_id>, prod-patch-<unique_id>, main-patch-<unique_id> or non-prod-patch-<unique_id>"
+    echo "Please rename your branch and try again."
+    exit 1  # Abort the push
+fi
+
+exit 0  # Allow the push if the branch name matches the pattern
+

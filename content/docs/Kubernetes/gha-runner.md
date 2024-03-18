@@ -1,6 +1,6 @@
 ---
 title: Setup Self Hosted GHA Runner
-weight: 1
+weight: 4
 ---
 
 # GitHub Action Runner Setup

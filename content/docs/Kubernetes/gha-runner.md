@@ -29,6 +29,8 @@ Actions Runner Controller (ARC) makes it simpler to run self hosted environments
 
 <img title="GHA COntroller" alt="Alt text" src="/content/images/image.png">
 
+![image info](./images/image.png)
+
 With ARC you can :
 ---
 - Deploy self hosted runners on Kubernetes cluster with a simple set of commands.

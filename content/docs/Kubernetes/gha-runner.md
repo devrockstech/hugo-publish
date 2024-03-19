@@ -27,7 +27,7 @@ The most ideal method to self host a GitHub action runner is to deploy it in Kub
 
 Actions Runner Controller (ARC) makes it simpler to run self hosted environments on Kubernetes(K8s) cluster.
 
-![image info](https://devrockstech.github.io/hugo-publish/content/images/image.png)
+![image info](https://devrockstech.github.io/hugo-publish/images/image.png)
 
 With ARC you can :
 ---

@@ -31,7 +31,7 @@ ClusterIP services expose the smallest surface area and should be used for pods 
 
 The diagram below shows how pods in the same cluster can communicate via the ClusterIP service:
 
-<img title="ClusterIP" alt="Alt text" src="/content/images/clusterip.png">
+[Loadbalancer](https://devrockstech.github.io/hugo-publish/images/clusterip.png)
 
 ## The NodePort service type
 The YAML below defines a NodePort service that directs traffic on port 30007 on each node (defined by the nodePort property) to port 8080 (defined by the targetPort property) on any pods with the label app set to web:
@@ -60,7 +60,7 @@ In practice, NodePort services are not used much in production systems. Unusual 
 
 The diagram below shows how external clients can communicate with pods via ports on the nodes exposed by the NodePort service:
 
-<img title="NodePort" alt="Alt text" src="/content/images/nodeport.png">
+[NodePort](https://devrockstech.github.io/hugo-publish/images/nodeport.png)
 
 
 ## The LoadBalancer service type
@@ -89,7 +89,7 @@ The downside to LoadBalancer services is that they usually incur additional cost
 
 The diagram below shows how external clients can communicate with pods via a load balancer created by the LoadBalancer service:
 
-<img title="ClusterIP" alt="Alt text" src="/content/images/loadbalancer.png">
+[Loadbalancer](https://devrockstech.github.io/hugo-publish/images/loadbalancer.png)
 
 
 # When to use which?

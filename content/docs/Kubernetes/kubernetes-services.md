@@ -5,9 +5,9 @@ weight: 5
 # Kubernetes Service Types
 Kubernetes services provide three different types:
 
-- [ClusterIP](#The-ClusterIP-service-type)
-- [NodePort](#The-NodePort-service-type)
-- [LoadBalancer](##The-LoadBalancer-service-type)
+- [The ClusterIP Service Type](#The-ClusterIP-service-type)
+- [NThe NodePort Service Type](#The-NodePort-service-type)
+- [The LoadBalancer Service Type](##The-LoadBalancer-service-type)
 
 ## The ClusterIP service type
 The YAML below defines a service of type ClusterIP that directs traffic on port 80 (defined by the port property) to port 8080 (defined by the targetPort property) on any pods with the label app set to web (defined by the selector property):
@@ -34,7 +34,7 @@ The diagram below shows how pods in the same cluster can communicate via the Clu
 
 ![clusterip](https://devrockstech.github.io/hugo-publish/images/clusterip.png)
 
-## The NodePort service type
+## The NodePort Service Type
 The YAML below defines a NodePort service that directs traffic on port 30007 on each node (defined by the nodePort property) to port 8080 (defined by the targetPort property) on any pods with the label app set to web:
 
 ```yaml
@@ -64,7 +64,7 @@ The diagram below shows how external clients can communicate with pods via ports
 ![NodePort](https://devrockstech.github.io/hugo-publish/images/nodeport.png)
 
 
-## The LoadBalancer service type
+## The LoadBalancer Service Type
 The YAML below defines a LoadBalancer service that directs traffic from port 80 (defined by the port property) on a public load balancer and internal service to port 8080 (defined by the targetPort property) on any pods with the label app set to web:
 
 ```yaml

@@ -5,9 +5,9 @@ weight: 5
 # Kubernetes Service Types
 Kubernetes services provide three different types:
 
-- [The ClusterIP Service Type](#The-ClusterIP-service-type)
-- [NThe NodePort Service Type](#The-NodePort-service-type)
-- [The LoadBalancer Service Type](##The-LoadBalancer-service-type)
+- [The ClusterIP Service Type](#the-clusterip-service-type)
+- [The NodePort Service Type](#the-nodeport-service-type)
+- [The LoadBalancer Service Type](#the-loadbalancer-service-type)
 
 ## The ClusterIP service type
 The YAML below defines a service of type ClusterIP that directs traffic on port 80 (defined by the port property) to port 8080 (defined by the targetPort property) on any pods with the label app set to web (defined by the selector property):

@@ -16,4 +16,4 @@ You can even build content of table like this
     - [K3s-Docker](/hugo-publish/docs/kubernetes/edge/docker-k3s) 
     - [K3s-CRI-O](/hugo-publish/docs/kubernetes/edge/crio-k3s) 
     - [K3s-Containerd](/hugo-publish/docs/kubernetes/edge/containerd-k3s)
-- [Setup Github Action Self Hosted Runner on Kubernetes](/hugo-publish/docs/kubernetes/gha-runner)
+

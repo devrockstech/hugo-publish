@@ -14,3 +14,4 @@ I will be focusing security on the below areas
 
 - [Kubernetes](/hugo-publish/docs/kubernetes)
 - [Terraform](/hugo-publish/docs/terraform)
+- [Github Actions](/hugo-publish/docs/gha)

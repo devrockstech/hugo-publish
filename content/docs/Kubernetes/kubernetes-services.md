@@ -1,6 +1,6 @@
 ---
 title: Kubernetes Service Types
-weight: 5
+weight: 3
 ---
 # Kubernetes Service Types
 Kubernetes services provide three different types:

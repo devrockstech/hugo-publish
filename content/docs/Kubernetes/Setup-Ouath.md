@@ -1,6 +1,6 @@
 ---
 title: Setup Oauth on Kind Cluster
-weight: 3
+weight: 2
 ---
 
 # Setup Github Oauth

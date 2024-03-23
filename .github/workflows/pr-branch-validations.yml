@@ -7,7 +7,7 @@ on:
 
 jobs:
   validate_pr:
-    runs-on: ubuntu-latest
+    runs-on: cse-runner-np
 
     steps:
     - name: Checkout repository

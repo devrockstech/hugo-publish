@@ -47,6 +47,13 @@ Installation of Self Hosted runner is a two fold process.
 
 ## Deploy Runner Controller
 ---
+The first chart will create a Kubernetes deployment made up of 1 replica (Pod), by default.  But, if desired, you can pass overrides to the Helm chart in order to add extra, high-availability replicas to this deployment.  It also creates other things, such as roles, role bindings, and service accounts.  Lastly, it will create multiple new Custom Resource Definitions (CRD) in your cluster.
+
+
+The point of this deployment is to run the various "Controllers" that are used to manage and orchestrate the ARC system.
+
+
+You only need to install this chart once, as this 1 controller deployment can manage multiple different runner scale sets.
 Use the following command to download the GitHub Actions Runner Controller Helm Chart in the current directory:
 
 ```bash
@@ -87,6 +94,9 @@ arc-gha-rs-controller-78c9b88766-8l9zc   1/1     Running   0          5m
 
 ## Deploy Self-Hosted Runner
 ---
+The second chart will create a Runner Scale Set.  A Runner Scale Set is a new term that we haven't really discussed yet.  But, it essentially stands for a bunch of GitHub Runner Pods that are grouped together and auto-scaled.  Using the term "Scale Set" is a little dubious, in my opinion.  Naturally, you want to compare it with the Azure VM Scale Sets that are used by Azure DevOps.  But, rest assured, these are definitely not the same as VM Scale Sets.
+
+The chart also creates other things, such as roles, role bindings, and service accounts.
 Use the following command to download the GitHub Actions Runner Helm Chart in the current directory:
 
 ```bash

@@ -183,3 +183,49 @@ template:
 ## calculated as a sum of minRunners and the number of jobs assigned to the scale set.
 # minRunners: 0
 ```
+
+If your job requires to do some docker related activities, then you need to mount docker 
+
+```yaml
+githubConfigUrl: https://github.com/<org-name>/<repo-name>
+
+githubConfigSecret:
+  github_token: "<PAT-TOKEN>"
+
+containerMode:
+  type: "kubernetes"
+
+  kubernetesModeWorkVolumeClaim:
+    accessModes: ["ReadWriteOnce"]
+    storageClassName: "standard-rwo"
+    resources:
+      requests:
+        storage: 1Gi
+
+template:
+  spec:
+    securityContext:
+      fsGroup: 123
+    volumes:
+      - name: docker
+        hostPath:
+          path: /var/run/docker.sock
+          type: Socket
+    containers:
+      - name: runner
+        image: ghcr.io/actions/actions-runner:latest
+        command: ["/home/runner/run.sh"]
+        env:
+          - name: ACTIONS_RUNNER_REQUIRE_JOB_CONTAINER
+            value: "false"
+        volumeMounts:
+          - name: docker
+            mountPath: /var/run/docker.sock
+            readOnly: true
+
+## maxRunners is the max number of runners the autoscaling runner set will scale up to.
+# maxRunners: 5
+
+## minRunners is the min number of idle runners. The target number of runners created will be
+## calculated as a sum of minRunners and the number of jobs assigned to the scale set.
+# minRunners: 0

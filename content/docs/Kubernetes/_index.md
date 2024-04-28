@@ -12,9 +12,9 @@ You can even build content of table like this
 
 - [Setup Kind Cluster](/hugo-publish/docs/kubernetes/kind-cluster)
 - [Setup Ouath on Kind CLuster](/hugo-publish/docs/kubernetes/Setup-Ouath)
-- [Kubernetes Service Types ](/hugo-publish/docs/kubernetes/kubernetes-services.md)
+- [Kubernetes Service Types](/hugo-publish/docs/kubernetes/kubernetes-services.md)
 - [Kubernetes Data Persistance](/hugo-publish/docs/kubernetes/kubernets-data-persistance.md)
-- [Kubernetes Service Types ](/hugo-publish/docs/kubernetes/affinity-antiaffinity.md)
+- [Kubernetes Service Types](/hugo-publish/docs/kubernetes/affinity-antiaffinity.md)
 - [Setup Cluster on Edge](/hugo-publish/docs/kubernetes/edge) 
     - [K3s-Docker](/hugo-publish/docs/kubernetes/edge/docker-k3s) 
     - [K3s-CRI-O](/hugo-publish/docs/kubernetes/edge/crio-k3s) 

@@ -2,7 +2,7 @@
 title: Affinity & Antiaffinity
 weight: 5
 ---
-# Node Affinity and AntiAffinity
+# Kubernetes Node Affinity and Anti-Affinity
 
 There are two type of affinity rules in kubernetes
 1. Node Affinity

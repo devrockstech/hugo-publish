@@ -239,3 +239,56 @@ template:
 ## minRunners is the min number of idle runners. The target number of runners created will be
 ## calculated as a sum of minRunners and the number of jobs assigned to the scale set.
 # minRunners: 0
+
+If you need adding persistance to the runner pod you can use the following yaml below
+
+```yaml
+githubConfigUrl: https://github.com/<org-name>/<repo-name>
+
+githubConfigSecret:
+  github_token: "<PAT-TOKEN>"
+
+containerMode:
+  type: "kubernetes"
+  kubernetesModeWorkVolumeClaim:
+    accessModes: ["ReadWriteOnce"]
+    storageClassName: "standard-rwo"
+    resources:
+      requests:
+        storage: 1Gi
+minRunners: 0
+maxRunners: 5
+template:
+  spec:
+    securityContext:
+      fsGroup: 123
+    containers:
+      - name: runner
+        image: ghcr.io/actions/actions-runner:latest
+        command: ["/home/runner/run.sh"]
+        env:
+          - name: ACTIONS_RUNNER_REQUIRE_JOB_CONTAINER
+            value: "false"
+        volumeMounts:
+          - name: work
+            mountPath: /home/runner/_work
+        resources:
+          requests:
+            cpu: 1
+            memory: 2Gi
+          limits:
+            cpu: 1
+            memory: 2Gi
+    nodeSelector:
+      cloud.google.com/gke-nodepool: pool-bq
+    volumes:
+      - name: work
+        ephemeral:
+          volumeClaimTemplate:
+            spec:
+              accessModes: ["ReadWriteOnce"]
+              storageClassName: "standard-rwo"
+              resources:
+                requests:
+                  storage: 10Gi
+  ```

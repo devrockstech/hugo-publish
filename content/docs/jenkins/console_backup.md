@@ -1,5 +1,5 @@
 ---
-title: Taking Jenkins Backup Using CLI
+title: Taking Jenkins Backup Using Console
 weight: 3
 ---
 # Jenkins Backup – Backup/Upload/Restore

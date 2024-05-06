@@ -6,6 +6,9 @@ weight: 4
 # Jenkins Backup/Restore from CLI
 
 ## Backup Script
+
+This script below can be used to create Jenkins backup using Jenkins cli.
+
 ```sh
 #!/bin/bash -xe
 

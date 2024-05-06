@@ -1,7 +1,7 @@
 ---
 weight: 10
 bookFlatSection: true
-title: "GitHub Actions"
+title: "GitHub Actions Administration"
 ---
 
 # Kubernetes

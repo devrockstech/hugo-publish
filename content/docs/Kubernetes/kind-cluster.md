@@ -3,7 +3,7 @@ title: Setup Kind Cluster
 weight: 1
 ---
 # Local Kubernetes Cluster Setup
-![image](https://github.com/devrockstech/setup_local_cluster/assets/142865469/fddd593a-063d-461d-8b7b-a7871cd69822)
+![image](https://kind.sigs.k8s.io/logo/logo.png)
 
 When you are rushing to test your new Kubernetes manifest or helm charts or kustomize manifest, you don't need to wait on anyone, there is an easy way for you to setup a local cluster on you mac or your desktop machine in very few steps. 
 The below steps have been referenced from the official [website](https://kind.sigs.k8s.io/)

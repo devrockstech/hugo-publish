@@ -30,7 +30,7 @@ Go to the Developer settings.
 Click on OAuth Apps, and then click New OAuth Apps.
 Now fill in all the details, the callback address should be the /api/dex/callback endpoint of your Argo CD URL (e.g. https://argocd.example.com/api/dex/callback).
 
-![SSO](./argocd-sso.png)
+![SSO](https://devrockstech.github.io/hugo-publish/images/argocd-sso.png)
 
 After registering the app, you will receive an OAuth2 client ID and secret.
 

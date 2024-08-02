@@ -2,6 +2,6 @@
 weight: 10
 ---
 
-# K3S
+# ArgoCD
 
 - [Installing ArgoCD on Kubernetes - Core](/docs/kubernetes/argocd/installing_argocd_on_kubernetes)

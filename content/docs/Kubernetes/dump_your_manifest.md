@@ -3,6 +3,9 @@ title: Dump Your Cluster Data and Run a Depricate API Check
 weight: 7
 ---
 # Script To Dump Cluster Data (Per Namespace)
+
+This script will basically dump all the data of a running pod into YAML manifest. Before running the script ensure you are authenticated with the Kubernetes cluster and have 'admin' level RBAC.
+
 ```bash
 #!/bin/bash
 

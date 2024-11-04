@@ -13,9 +13,11 @@ Secure from the start" in the context of cloud computing refers to the practice 
 I will be focusing security on the below areas  
 
 - [Kubernetes](/hugo-publish/docs/kubernetes)
-<!---- - [Terraform](/hugo-publish/docs/terraform) -->
+<!---- - [Terraform](/hugo-publish/docs/terraform) 
 - [Github Actions](/hugo-publish/docs/gha)
-<!----:- [Jenkins](/hugo-publish/docs/jenkins) -->
+- [Jenkins](/hugo-publish/docs/jenkins) 
+- [Terraform](/hugo-publish/docs/terraform
+-->
 
 <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="bunty-ray-8b88405" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/bunty-ray-8b88405?trk=profile-badge">Bunty Ray</a></div>
               

@@ -19,4 +19,4 @@ You can even build content of table like this
 - [Kubernetes Taints & Tollerance](/hugo-publish/docs/kubernetes/taint-tollerance)
 - [Kubernetes Admission Controller](/hugo-publish/docs/kubernetes/admission-controller) 
     - [CEL](/hugo-publish/docs/kubernetes/admission-controller/cel) 
-[//]: - [Argo CD](/hugo-publish/docs/kubernetes/edge) 
+<!---- [Argo CD](/hugo-publish/docs/kubernetes/edge) -->

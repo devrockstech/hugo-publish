@@ -1,6 +1,6 @@
 ---
 weight: 10
-bookFlatSection: true
+bookFlatSection: false
 title: "Jenkins Administration"
 ---
 

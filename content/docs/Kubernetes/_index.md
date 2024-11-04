@@ -18,5 +18,5 @@ You can even build content of table like this
 - [Kubernetes Priority Class](/hugo-publish/docs/kubernetes/priority-class)
 - [Kubernetes Taints & Tollerance](/hugo-publish/docs/kubernetes/taint-tollerance)
 - [Kubernetes Admission Controller](/hugo-publish/docs/kubernetes/admission-controller) 
-    - [K3s-Docker](/hugo-publish/docs/kubernetes/admission-controller/cel) 
+    - [CEL](/hugo-publish/docs/kubernetes/admission-controller/cel) 
 - [Argo CD](/hugo-publish/docs/kubernetes/edge) 
